@@ -73,7 +73,7 @@ end
 ---@param target tilemap
 function mazeGenerator.applySolution2Tilemap(target, coords, value)
     for _, xy in ipairs(coords) do
-        print("x: " .. xy.x .. ", " .. "y: " .. xy.y)
+        -- print("x: " .. xy.x .. ", " .. "y: " .. xy.y)
         target:set(xy.x * 2, xy.y * 2, value)
 
         if xy.towards then
